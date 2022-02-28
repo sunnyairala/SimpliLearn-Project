@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-sm-12">
+    <h3>{{ account.name }}</h3>
+    <p>Status: {{ account.status }}</p>
+    <button class="btn btn-danger" (click)="accountDeleted()">Delete</button>
+    <button class="btn btn-default" (click)="changeStatus('Active')">
+      Active
+    </button>
+    <button class="btn btn-default" (click)="changeStatus('InActive')">
+      InActive
+    </button>
+    <button class="btn btn-default" (click)="changeStatus('Hidden')">
+      Hidden
+    </button>
+  </div>
+</div>
+<hr />

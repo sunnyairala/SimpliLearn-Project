@@ -1,0 +1,24 @@
+<form class="form-inline">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Product Name"
+    [(ngModel)]="productName"
+    name="productName"
+  />
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Stock"
+    name="productStock"
+    [(ngModel)]="productStock"
+  />
+  <button
+    class="btn btn-primary"
+    (click)="onAddProduct()"
+    type="button"
+    [disabled]="addDisabled"
+  >
+    Add
+  </button>
+</form>

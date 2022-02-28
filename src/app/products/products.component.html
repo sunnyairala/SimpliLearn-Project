@@ -1,0 +1,15 @@
+<h1 rkhighlighter>Product Management Application</h1>
+<div class="container">
+  <app-product
+    *ngFor="let product of products"
+    [productElement]="product"
+  ></app-product>
+  <app-cockpit (productAdded)="onProductAdded($event)"></app-cockpit>
+</div>
+
+<p
+  *ngIf="showTestParagraph"
+  [ngStyle]="{ backgroundColor: getTestParagraphStyle() }"
+>
+  Test Paragraph
+</p>

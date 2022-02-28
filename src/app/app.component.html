@@ -1,0 +1,52 @@
+<!-- <app-products></app-products> -->
+
+<!-- <app-numbers></app-numbers> -->
+
+<!-- <app-accounts></app-accounts> -->
+
+<!-- <app-test></app-test> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="nav nav-tabs">
+        <li
+          role="presentation"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a routerLink="/">Home</a>
+        </li>
+        <li role="presentation" routerLinkActive="active">
+          <a routerLink="/products">Products</a>
+        </li>
+        <li role="presentation" routerLinkActive="active">
+          <a routerLink="/accounts">Accounts</a>
+        </li>
+        <li role="presentation" routerLinkActive="active">
+          <a routerLink="/numbers">Numbers</a>
+        </li>
+        <li role="presentation" routerLinkActive="active">
+          <a routerLink="/users">Users</a>
+        </li>
+        <li role="presentation" routerLinkActive="active">
+          <a routerLink="/blogposts">Blog</a>
+        </li>
+        <li role="presentation" routerLinkActive="active">
+          <a routerLink="/test">test</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <!-- <div class="row">
+    <app-products></app-products>
+  </div>
+  <div class="row col-xs-8"><app-accounts></app-accounts></div>
+  <div class="row col-xs-8"><app-numbers></app-numbers></div>
+  <div class="row col-xs-8"><app-test></app-test></div> -->
+</div>
